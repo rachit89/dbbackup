@@ -32,4 +32,5 @@ for db in $DATABASES; do
         aws s3 cp ${LOCAL_DIR}/${db}-${DATE_FORMAT}.sql.gz ${REMOTE_DIR}/${DATE_FORMAT}/
 done
 
+
 rm ${LOCAL_DIR}/${db}-${DATE_FORMAT}.sql.gz
